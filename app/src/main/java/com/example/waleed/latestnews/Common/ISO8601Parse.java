@@ -9,23 +9,29 @@ import java.util.TimeZone;
 
 public class ISO8601Parse {
     public static Date parse(String input) throws java.text.ParseException {
+        SimpleDateFormat df=null;
+        try {
+            //NOTE: SimpleDateFormat uses GMT[-+]hh:mm for the TZ which breaks
+            //things a bit.  Before we go on we have to repair this.
+            df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssz");
 
-        //NOTE: SimpleDateFormat uses GMT[-+]hh:mm for the TZ which breaks
-        //things a bit.  Before we go on we have to repair this.
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssz");
+            //this is zero time so we need to add that TZ indicator for
+            if (input != null && input.endsWith("Z")) {
+                input = input.substring(0, input.length() - 1) + "GMT-00:00";
+            } else {
+                int inset = 6;
 
-        //this is zero time so we need to add that TZ indicator for
-        if (input.endsWith("Z")) {
-            input = input.substring(0, input.length() - 1) + "GMT-00:00";
-        } else {
-            int inset = 6;
 
-            String s0 = input.substring(0, input.length() - inset);
-            String s1 = input.substring(input.length() - inset, input.length());
+                String s0 = input.substring(0, input.length() - inset);
+                String s1 = input.substring(input.length() - inset, input.length());
 
-            input = s0 + "GMT" + s1;
+                input = s0 + "GMT" + s1;
+            }
         }
-
+        catch (Exception e){
+            e.getStackTrace();
+        }
+        if(df==null||input==null)return new Date();
         return df.parse(input);
 
     }
