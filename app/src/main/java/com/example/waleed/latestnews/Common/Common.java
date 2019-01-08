@@ -1,8 +1,6 @@
 package com.example.waleed.latestnews.Common;
 
-import com.example.waleed.latestnews.Interface.IconBetterIdeaServices;
 import com.example.waleed.latestnews.Interface.NewsService;
-import com.example.waleed.latestnews.Remote.IconBetterideaclient;
 import com.example.waleed.latestnews.Remote.RetrofitClient;
 
 public class Common {

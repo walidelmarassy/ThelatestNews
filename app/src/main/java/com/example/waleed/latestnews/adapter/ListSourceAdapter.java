@@ -6,24 +6,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.ListPopupWindow;
 import android.widget.TextView;
 
-import com.example.waleed.latestnews.Common.Common;
-import com.example.waleed.latestnews.Interface.IconBetterIdeaServices;
 import com.example.waleed.latestnews.Interface.ItemClickListener;
 import com.example.waleed.latestnews.ListNews;
-import com.example.waleed.latestnews.Model.IconBetterIdea;
-import com.example.waleed.latestnews.Model.Source;
 import com.example.waleed.latestnews.Model.WebSite;
 import com.example.waleed.latestnews.R;
-import com.squareup.picasso.Picasso;
-
-import de.hdodenhof.circleimageview.CircleImageView;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 class listsourceViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
 {
