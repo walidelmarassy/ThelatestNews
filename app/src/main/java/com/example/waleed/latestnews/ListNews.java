@@ -72,7 +72,7 @@ public class ListNews extends AppCompatActivity {
 
             }
         });
-        kbv=(KenBurnsView)findViewById(R.id.top_image);
+        kbv=(KenBurnsView) findViewById(R.id.top_image);
         top_title=(TextView)findViewById(R.id.top_title);
         top_author=(TextView)findViewById(R.id.topauthor);
         listnews=(RecyclerView)findViewById(R.id.list_News);

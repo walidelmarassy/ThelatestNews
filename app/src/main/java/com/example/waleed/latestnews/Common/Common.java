@@ -23,7 +23,7 @@ public class Common {
 
     public static String getApiUrl(String source, String apiKEY){
         StringBuilder apiUrl=new StringBuilder("https://newsapi.org/v2/top-headlines?sources=");
-      return   apiUrl.append(source).append("&apiKey=").append(apiKEY).toString();
+      return  apiUrl.append(source).append("&apiKey=").append(apiKEY).toString();
 
 
     }

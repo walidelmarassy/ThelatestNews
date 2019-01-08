@@ -29,13 +29,11 @@ class listsourceViewHolder extends RecyclerView.ViewHolder implements View.OnCli
 {
     ItemClickListener itemClickListener;
     TextView Source_title;
-    CircleImageView Source_image;
 
 
     public listsourceViewHolder(View itemView) {
         super(itemView);
         Source_title=(TextView)itemView.findViewById(R.id.source_name);
-        Source_image=(CircleImageView)itemView.findViewById(R.id.Source_image);
         itemView.setOnClickListener(this);
 
     }
@@ -54,7 +52,6 @@ class listsourceViewHolder extends RecyclerView.ViewHolder implements View.OnCli
 public class  ListSourceAdapter extends RecyclerView.Adapter<listsourceViewHolder>{
     private Context context;
     private WebSite webSite;
-    private IconBetterIdeaServices mservices;
 
 
     public ListSourceAdapter(Context context, WebSite webSite) {

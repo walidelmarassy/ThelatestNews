@@ -3,7 +3,7 @@ package com.example.waleed.latestnews.Interface;
 import android.view.View;
 
 public interface ItemClickListener {
-    void onclick(View view,int postion,boolean islongclick);
+    void onclick(View view, int position, boolean isLongClick);
 
 
 }

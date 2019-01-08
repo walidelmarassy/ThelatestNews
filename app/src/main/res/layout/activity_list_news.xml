@@ -16,7 +16,7 @@
             app:diagonal_angle="5"
             app:diagonal_direction="left"
             app:diagonal_position="bottom"
-            >
+             >
             <com.flaviofaria.kenburnsview.KenBurnsView
                 android:id="@+id/top_image"
                 android:layout_width="match_parent"

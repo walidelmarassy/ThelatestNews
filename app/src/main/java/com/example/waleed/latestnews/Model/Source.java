@@ -5,25 +5,24 @@ import java.util.List;
 
 public class Source {
     private String id;
-    private String Name;
-    private String Description;
-    private String Url;
-    private String Category;
-    private String Language;
-    private String Country;
-
+    private String name;
+    private String description;
+    private String url;
+    private String category;
+    private String language;
+    private String country;
 
     public Source() {
     }
 
     public Source(String id, String name, String description, String url, String category, String language, String country) {
         this.id = id;
-        Name = name;
-        Description = description;
-        Url = url;
-        Category = category;
-        Language = language;
-        Country = country;
+        this.name = name;
+        this.description = description;
+        this.url = url;
+        this.category = category;
+        this.language = language;
+        this.country = country;
     }
 
     public String getId() {
@@ -35,52 +34,51 @@ public class Source {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public String getUrl() {
-        return Url;
+        return url;
     }
 
     public void setUrl(String url) {
-        Url = url;
+        this.url = url;
     }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        this.category = category;
     }
 
     public String getLanguage() {
-        return Language;
+        return language;
     }
 
     public void setLanguage(String language) {
-        Language = language;
+        this.language = language;
     }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 
     public void setCountry(String country) {
-        Country = country;
+        this.country = country;
     }
-
-
 }
+
